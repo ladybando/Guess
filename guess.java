@@ -22,10 +22,17 @@ public class Guess {
                     System.out.println("Fahrenheit: " + f + "  Celsius: " + c);
                     break;
                 }
+                case "K2P": {
+                    double k = in.nextDouble();
+                    double p = (k * 2.20462);
+                    System.out.println("Kilograms: " + k + "  Pounds: " + p);
+                    break;
+                }
                 case "P2K":
                     double p = in.nextDouble();
                     double k = (p - 32) * 5 / 9;
                     System.out.println("Pounds: " + p + "  Kilograms: " + k);
+
                 case "Q": {
                     System.out.println("Come convert again!");
                     System.exit(0);
@@ -36,9 +43,5 @@ public class Guess {
             }
 
         }
-
-        //Kilograms-to-Pounds (“K2P”)
-        //USdollars-to-Euros (“U2E”)
-        //Euros-to-USdollars (“E2U”)F2
     }
 }
